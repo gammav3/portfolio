@@ -1,0 +1,8 @@
+.aisatu{margin-top: 100px; margin-bottom: 100px;}
+.aisatu li{text-align: center;}
+.aisatu p{padding: 0 25px; color: #666; margin-top: 15px;text-align: center; margin-bottom: 65px;}
+.aisatu img{width: 85%; margin-bottom: 60px; margin-top: 20px;}
+.aisatu span{padding: 0 25px; color: #666; margin-top: 5px; text-align: justify; display: block;}
+.last_aisatu span:nth-of-type(1){margin-top: 30px;}
+.last_aisatu span:nth-of-type(5){text-align: right; margin-top: 30px;}
+strong{font-size: 1.2rem;}

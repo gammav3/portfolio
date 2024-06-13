@@ -1,0 +1,30 @@
+.title_area{margin-bottom: 100px;}
+.content_area{margin: 100px 0; width: 100%;}
+.con1_info img{width: 100%;}
+.con1_info dl dt{font-size: 1.3rem; font-weight: 700; color: #3D5F5D; text-align: center; margin: 50px 0;}
+.con1_info dl dd{text-align: justify; color: #666; width: 90%; margin: 10px auto 50px;}
+
+.h3_info{width: 90%; margin: 0 auto;}
+.h3_info img{width: 100%;}
+.h3_info h3{font-size: 1.3rem; font-weight: 900; color: #3D5F5D; text-align: center; margin: 50px;}
+.h3_info p{text-align: justify; color: #666; margin: 10px auto 50px; margin-bottom: 100px;}
+
+
+/*아코디언 css */
+.accordion{margin: 0 auto 100px; width: 90%;}
+.accordion i{float: right; padding-top: 4px; font-size: 1.5rem; padding-right: 5%;}
+.target {display: block; top: 0; left: 0; position: fixed;}
+.open-accordion {display: block;} /*가상의 css*/
+.close-accordion {display: none;} /*가상의 css*/
+.accordion p{color: #fff; text-decoration: none;}
+:target ~ .open-accordion {display: none;} /*가상의 css 열렸을땐 닫히고 닫혔을땐 열린다*/
+:target ~ .close-accordion { display: block;} /*가상의 css 열렸을땐 닫히고 닫혔을땐 열린다*/
+.accordion__li {background: #333; padding: 15px 20px; margin: 10px 0;} /* 아코디언 디자인 */
+/* 아코디언이 열렸을때 */
+.accordion__content {height: 0;  overflow: hidden; transition: all 0.3s ease-in-out;}
+
+.accordion__li:nth-of-type(2) :target ~ .accordion__content {padding: 20px 0 0 0; height: 100px;}
+.accordion__li:nth-of-type(3) :target ~ .accordion__content {padding: 20px 0 0 0; height: 100px;}
+.accordion__li:nth-of-type(4) :target ~ .accordion__content {padding: 20px 0 0 0; height: 100px;}
+.accordion__li:nth-of-type(5) :target ~ .accordion__content {padding: 20px 0 0 0; height: 100px;}
+.accordion__li:nth-of-type(6) :target ~ .accordion__content {padding: 20px 0 0 0; height: 100px;}

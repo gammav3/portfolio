@@ -1,0 +1,19 @@
+#content{width: 100%;}
+.contlist{width: 90%; margin: 0 auto;}
+.contlist img{width: 100%;}
+.coco_info_box{margin-top: 50px; padding: 20px 0;}
+.coco_info_box p:nth-of-type(1){font-size: 1.5rem; text-align: center; font-weight: 700; padding: 10px 0 30px 0; color: #3D5F5D;}
+.coco_info_box .coco_info_box_p{color: #666; margin: 20px 0; text-align: justify;}
+.flx_con{display: flex; gap: 10%; justify-content: right; margin: 30px 0 50px 0;}
+.flx_con a:nth-of-type(3){padding: 5px 12px; background: #333; color: #fff; border-radius: 5px;}
+.flx_con i{font-size: 2rem; }
+.visual img{border-radius: 10px;}
+
+.table01{width: 100%; margin: 30px 0 50px 0;}
+.table01 td{border: 1px solid #e2e2e2; text-align: center; padding: 5px 0; font-size: 0.75rem;}
+.table01 th{border: 2px solid #fff; color: #333; font-weight: 500; background: #bbd4d7; text-align: center; padding: 5px 0; font-size: 0.8rem;}
+
+.dlinfo dl dt{color: #3D5F5D; font-size: 1.2rem; margin:30px 0 20px 0; font-weight: 700;}
+.dlinfo dl dd{color: #666;}
+
+.table01_info{color: #3D5F5D; font-size: 1.2rem; margin:30px 0 20px 0; font-weight: 700;}

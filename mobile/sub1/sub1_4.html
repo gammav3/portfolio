@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서대문자연사박물관</title>
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+    <link rel="apple-touch-startup-image" href="../startup.png">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1_common.css">
+    <link rel="stylesheet" href="./css/sub1_4.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <script src="../js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/6fa5941add.js" crossorigin="anonymous"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f9526ca7e7e1903e3847e9a85c720962"></script>
+    <script src="../js/map.js"></script>
+
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+        }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    
+    <? include '../sub_common/sub_header.html' ?>
+    
+        <div class="visual">
+            <img class="subvisual" src="./common/images/visual01.jpg" alt="">
+        </div>
+
+       
+        <!-- 서브 내비 -->
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub1_1.html">박물관 소개</a></li>
+                <li><a href="./sub1_2.html">인사말</a></li>
+                <li><a href="./sub1_3.html">발자취</a></li>
+                <li class="current"><a href="./sub1_4.html">오시는 길</a></li>
+            </ul>
+        </div>
+       <!-- 서브 내비 끝 -->
+
+       <div id="content">
+         <div class="title_area">
+             <h2>오시는 길</h2>
+             <p>SEODAMUN MUSEUM OF NATURAL HISTORY</p>
+         </div>
+       </div>
+
+        <div class="content_area">
+            <div class="map_api">
+            
+                <div id="map">
+                </div>
+            </div>
+            <h3 class="hidden">교통 안내</h3>
+            <ul class="cometo">
+                <li>
+                    <dl>
+                        <dt><i class="fa-solid fa-train-subway"></i> 지하철</dt>
+                        <dd>신촌역 출발 : 신촌역 2호선 서대문03번 마을버스 서대문자연사박물관 정류장에 하차</dd>
+                        <dd>무악제역 출발 : 무악제역 3호선 7738(지선버스) 서대문자연사박물관 정류장에 하차</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><i class="fa-solid fa-bus-simple"></i> 버스</dt>
+                        <dd>간선버스: 110A번, 163번</dd>
+                        <dd>지선버스: 7017번, 7720번, 7738 번</dd>
+                        <dd class="cometo_info">※ 지하철 연계버스(7738) 이용 시 중앙차선 버스정류장이 아닌 지선버스 정류장으로 가셔야 합니다.</dd>
+                    </dl>
+                </li>
+            </ul>
+            
+            <h3 class="h3_info" id="parking"><i class="fa-solid fa-square-parking"></i> 주차 안내</h3>
+            <table> 
+               <thead>
+                 <tr>
+                     <th scope="col">구분</th>
+                     <th scope="col">기본(2시간)</th>
+                     <th scope="col">2시간 초과 10분당</th>
+                 </tr>
+               </thead>
+                <tbody>
+                    <tr>
+                        <td>대형(20인승 이상)</td>
+                        <td>5.000원</td>
+                        <td>1.000원</td>
+                    </tr>
+                    <tr>
+                        <td>소형(20인승 미만)</td>
+                        <td>3,000원</td>
+                        <td>500원</td>
+                    </tr>
+                    <tr>
+                        <td>경차(1,000cc 이하)</td>
+                        <td colspan="2">정산금액의 50% 할인</td>
+    
+                    </tr>
+                    <tr>
+                        <td>저공해차량(표지부착차량)</td>
+                        <td colspan="2">정산금액의 50% 할인</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+<? include '../sub_common/sub_footer.html' ?>
+<script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+</body>
+</html>

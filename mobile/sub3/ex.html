@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .target {display: block; top: 0; left: 0; position: fixed;}
+    .open-accordion {display: block;} /*가상의 css*/
+    .close-accordion {display: none;} /*가상의 css*/
+    .accordion p{color: #fff; text-decoration: none;}
+    :target ~ .open-accordion {display: none;} /*가상의 css 열렸을땐 닫히고 닫혔을땐 열린다*/
+    :target ~ .close-accordion { display: block;} /*가상의 css 열렸을땐 닫히고 닫혔을땐 열린다*/
+    .accordion__li { width: 300px; background: #3D5F5D; border-radius: 0.4rem; padding: 20px;} /* 아코디언 디자인 */
+    /* 아코디언이 열렸을때 */
+    .accordion__content {height: 0;  overflow: hidden; transition: all 0.3s ease-in-out;}
+    .accordion__li:nth-of-type(2) :target ~ .accordion__content { height: 13rem;}
+    </style>
+</head>
+<body>
+    <ul class="accordion">
+        <li class="target" id="accordion"></li>
+        <li class="accordion__li">
+          <span class="target" id="accordion1"></span>
+
+            <!-- 열린 아코디언 내용 -->
+          <a href="#accordion1" class="open-accordion" title="open">
+            <p class="accordion__title">Non consectetur a erat nam at lectus urna duis?</p>
+          </a>
+
+          <!-- 닫힌 아코디언 내용 -->
+
+          <a href="#accordion" class="close-accordion" title="close">
+                <p class="accordion__title">Non consectetur a erat nam at lectus urna duis?</p>
+          </a>
+
+
+          <p class="accordion__content">
+            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+            volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna
+            fringilla urna porttitor rhoncus dolor purus non.
+          </p>
+
+          
+        </li>
+      </ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.visual{width: 100%; margin-top: 40px;}
+.sub_nav ul{display: flex; justify-content: center;}
+.sub_nav ul li{width: 50%; text-align: center; background: #E9E9E9; color: #939393; padding: 15px 0; font-weight: 500; font-size: 0.8rem;}
+.sub_nav .current{background: rgb(61, 95, 93);}
+.sub_nav .current a{color: #fff; font-weight: 450;}
+
+#content .title_area h2{font-size: 1.7rem; text-align: center; margin-top: 80px; position: relative; color: #3D5F5D; font-weight: 600;}
+#content .title_area h2::after{content: ''; display: block; width: 2px; height: 30px; background: #9B9B9B; position: absolute; top: 70px; left: 50%;}
+#content .title_area p{text-align: center; font-size: 0.8rem;}
+
+.sub_nav02{width: 95%; margin: 100px auto 100px; overflow: hidden;}
+.sub_nav02 li{width: 33.33%; float: left; text-align: center; padding: 15px 0;}
+.sub_nav02 li a{font-size: 1rem; font-weight: 600; padding: 10px 15px; color: #777; transition: all .5s;}
+
+.content_area .contlist{display: none;}
+

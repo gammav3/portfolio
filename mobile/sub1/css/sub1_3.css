@@ -1,0 +1,9 @@
+.content_area{margin: 100px 0 100px 20%;}
+.history{position: relative;}
+.history ul li p{font-size: 0.7rem; text-align: justify; width: 60%;}
+.history .item{position: relative;}
+.history li{margin: 10px 15px;}
+.history strong{font-size: 1rem; color: #3D5F5D;}
+.history::before{content: ""; width: 1px; height: 100%; position: absolute; background: #999; position: absolute; left: -50px; top: 0;} 
+.history .item_f::after{content: ""; width: 5px; height: 5px; background:  #fff; border: 2px solid #3D5F5D; z-index: 1; position: absolute; left: -54px; top: 0; border-radius: 100%;}
+.history .item::after{content: ""; width: 5px; height: 5px; background:  #fff; border: 2px solid #999; z-index: 1; position: absolute; left: -54px; top: 0; border-radius: 100%;}
