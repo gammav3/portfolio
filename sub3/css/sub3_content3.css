@@ -1,0 +1,13 @@
+.content_area{width: 1250px; margin: 200px auto 300px;}
+.content_area img{box-shadow: 15px 15px 0 0 rgba(61, 95, 93, .4);}
+.so01{margin-bottom: 100px;}
+.content_area dl {width: 600px; text-align: justify;}
+.content_area dl dt{font-size: 1.88rem; color: #3D5F5D; margin: 130px 0 60px 0;}
+.content_area dl dd{font-size: 1.25rem;}
+.content_area .so01 dl, .content_area .so03 dl{float: right;}
+.content_area .so02 img{float: right;}
+.content_area .so02 dl{margin-bottom: 225px; padding-top:2px;}
+
+
+
+

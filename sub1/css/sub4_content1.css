@@ -1,0 +1,20 @@
+#content{width: 1400px; overflow: hidden;}
+.map_api{margin: 200px 0;}
+.map_api #map{width: 1400px; height: 600px; margin: 0 auto;}
+.cometo dt{font-size: 1.88rem; font-weight: 600; color: #3D5F5D; margin-bottom: 1.5rem;}
+.cometo dd{list-style:circle; margin-bottom: .3rem;}
+.cometo li{margin-bottom: 100px;}
+.cometo .cometo_info{font-size: .9rem; color: rgb(168, 168, 168);}
+.h3_info{font-size: 1.88rem; color: #3D5F5D; margin-bottom: 3rem;font-weight: 600;}
+table{width: 1400px; border-collapse: collapse; text-align: center;}
+table td{border: 1px solid #e2e2e2; padding: 40px 0;}
+table th{border-top: 2px solid #92b929; color: #333; font-size: 1.3rem; font-weight: 500; height: 80px;}
+.pay_div{width: 1400px; background: #f8f8f8f9; margin: 100px 0 300px; color: #333; padding: 50px;}
+.pay_div h3{font-size: 1.3em; margin-bottom: 30px;}
+
+
+.pay_div li{margin-bottom: 20px;}
+.pay_div li dl{margin-bottom: 20px; line-height: 1.8em;}
+.pay_div li dt{margin-bottom: 15px; font-size: 1.1em;}
+.pay_div li span{display: block;margin-left: 20px;}
+.pay_div li dd{margin-left: 30px;}

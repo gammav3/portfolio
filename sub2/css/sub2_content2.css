@@ -1,0 +1,33 @@
+.table01_info{font-size: 1.88rem; color: #3D5F5D; font-weight: 700; margin-top: 100px;}
+.table01{margin: 50px 0 300px 0;}
+.table01 td{border: 1px solid #e2e2e2; height: 100px; width: 320px; text-align: center;}
+.table01 th{border: 2px solid #fff; color: #333; font-size: 1.3rem; font-weight: 500; height: 80px; background: #bbd4d7; text-align: center;}
+
+.table02{margin-bottom: 40px;}
+.table02 td{border: 1px solid #e2e2e2; height: 100px; width: 1200px; text-align: justify; padding-left: 20px;}
+.table02 th{border: 2px solid #fff; color: #333; font-size: 1.3rem; font-weight: 500; height: 80px; background: #bbd4d7; text-align: center; width: 400px;}
+.table02_info{font-size: 1.88rem; color: #3D5F5D; font-weight: 700; margin-bottom: 40px;}
+
+.table03{text-align: center; width: 1400px; margin: 40px 0 300px 0;}
+.table03 td{width: 600px; border: 1px solid #e2e2e2; height: 50px;}
+.table03 th{border: 2px solid #fff; color: #333; font-size: 1.3rem; font-weight: 500; height: 80px; background: #bbd4d7;}
+
+li{list-style: none;}
+
+.coco_info{overflow: hidden; margin-top: 230px; position: relative; margin-bottom: 200px;}
+.coco_info img{float: left;}
+.coco_info_box{width: 700px; height: 700px; background: #fafafa; float: right;}
+.coco_info_box p:first-child{font-size: 2.50rem; font-weight: 700; background: #3D5F5D; text-align: center; color: #fff; padding: 5px 0; width: 560px;margin: 50px auto; border-radius: 30px;}
+.coco_info_box p:nth-of-type(2){font-size: 2.50rem; text-align: center; color: #3D5F5D; margin-bottom: 40px;}
+.coco_info_box_p{width: 560px; margin: 0 auto; text-align: justify; margin-bottom: 100px; font-size: 1.38rem;}
+.coco_info_box i{font-size: 3rem; color: #3D5F5D; padding: 5px;}
+.coco_info_box a{float: left; font-size: 1.5rem;}
+.coco_info_box_p_more{background: #92B929; color: #fff; width: 350px; text-align: center; padding: 10px 0; border-radius: 30px; margin-left: 60px; margin-right: 100px;}
+
+.coco_info_box_p03{width: 560px; margin: 120px auto; text-align: justify; margin-bottom: 100px; font-size: 1.38rem; margin-bottom: 110px;}
+.coco_info_box_p02{width: 560px; margin: 120px auto; text-align: justify; margin-bottom: 100px; font-size: 1.38rem; margin-bottom: 150px;}
+
+
+dl{margin-bottom: 100px;}
+dt{font-size: 1.88rem; color: #3D5F5D; font-weight: 700; margin-bottom: 40px;}
+dd{font-size: 1.25rem; margin-left: 30px;}

@@ -1,0 +1,21 @@
+/* 본문 내용 */
+
+#content{width: 1400px; margin: 0 auto;}
+#content ul{margin: 140px 0 300px 0;}
+#content li{height: 450px; margin-top: 160px;}
+#content dl{width: 830px; text-align: justify;}
+#content dt{font-size: 1.88rem; color: #3D5F5D; font-weight: 500;}
+#content dd{font-size: 1.1rem; line-height: 1.7rem; margin-top: 70px;}
+
+#content .con01 dl{float: right; margin-top: 100px; position: relative;}
+#content .con01 dl::after{
+                            content: '01'; display: block; color: rgba(0, 0, 0, .02); 
+                            font-size: 18.75rem; font-weight: 500; position: absolute; right: -100px; top: -250px;}
+#content .con02 dl{float: left; margin-right: 30px; margin-top: 100px; position: relative;}
+#content .con02 dl::after{
+    content: '02'; display: block; color: rgba(0, 0, 0, .02); 
+    font-size: 18.75rem; font-weight: 500; position: absolute; left: -100px; top: -250px;}
+#content .con03 dl{float: right; margin-top: 100px; position: relative;}
+#content .con03 dl::after{
+    content: '03'; display: block; color: rgba(0, 0, 0, .02); 
+    font-size: 18.75rem; font-weight: 500; position: absolute; right: -100px; top: -250px;}

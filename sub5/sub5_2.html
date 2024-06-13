@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소식/홍보-월간일정</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./css/sub5_content2.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <!-- 구글 폰트와 기타 아이콘-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <!-- <script src="./common/js/prefixfree.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/6fa5941add.js" crossorigin="anonymous"></script>
+    <link href='./css/main.min.css' rel='stylesheet'>
+    <script src='./js/main.min.js'></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+      
+          var da = new Date();
+          var gmonth=(da.getMonth()+1);
+          var gdate=(da.getDate());
+          if(gmonth<10)gmonth='0'+gmonth;
+          if(gdate<10)gdate='0'+gdate;
+      
+          var idate =da.getFullYear() +'-'+gmonth+'-'+gdate;
+          //console.log(idate);
+      
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+              left: 'prevYear,prev,next,nextYear today',
+              center: 'title',
+              right: 'dayGridMonth,dayGridWeek,dayGridDay'
+            },
+            initialDate: idate,
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: [
+              {
+                title: 'All Day Event',
+                start: '2020-06-01',
+                
+              },
+              {
+                start: '2020-06-02',
+                display: 'background',
+                color: 'red'
+              },
+              {
+                title: 'Long Event',
+                start: '2020-06-07',
+                end: '2020-06-10'
+              },
+              {
+                groupId: 999,
+                title: 'Repeating Event',
+                start: '2020-06-09T16:00:00'
+              },
+              {
+                groupId: 999,
+                title: 'Repeating Event',
+                start: '2020-06-16T16:00:00'
+              },
+              {
+                title: 'Conference',
+                start: '2020-06-11',
+                end: '2020-06-13'
+              },
+              {
+                title: 'Meeting',
+                start: '2020-06-12T10:30:00',
+                end: '2020-06-12T12:30:00',
+                color: '#f00'
+                
+              },
+              {
+                title: 'Lunch',
+                start: '2020-06-12T12:00:00'
+              },
+              {
+                title: 'Meeting',
+                start: '2020-06-12T14:30:00'
+              },
+              {
+                title: 'Happy Hour',
+                start: '2020-06-12T17:30:00'
+              },
+              {
+                title: 'Dinner',
+                start: '2020-06-12T20:00:00'
+              },
+              {
+                title: 'Birthday Party',
+                start: '2020-06-13T07:00:00'
+              },
+              {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2020-06-28'
+              }
+            ]
+          });
+      
+          calendar.render();
+        });
+      
+      </script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+
+
+    <!-- 비주얼 영역 -->
+    <div class="visual">
+       <span>소식/홍보</span>
+   </div>
+<!-- 비주얼 영역 끝 -->
+
+<!-- 서브 내비 -->
+   <div class="sub_nav">
+       <ul>
+           <li><a href="https://yurim1108.mycafe24.com/gb/bbs/board.php?bo_table=notice">새소식</a></li>
+           <li><a href="#" class="current">월간 일정</a></li>
+           <li><a href="./sub5_3.html">홍보 영상</a></li>
+       </ul>
+   </div>
+<!-- 서브 내비 끝 -->
+   <article id="content">
+   
+       <div class="title_area">
+           <div class="line_map">home &gt; 소식/홍보 &gt; <strong>새소식</strong></div>
+           <h2>전시</h2>
+           <p>서대문 자연사 박물관의 특별한 전시물을 살펴보세요</p>
+       
+       </div>
+       
+   <!-- 콘탠츠 해더영역 끝-->
+        <div class="content_area">
+            <div id='calendar'></div>
+        </div>
+</article>
+
+<? include '../common/sub_footer.html' ?>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인박물관-</title>
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./css/sub4_content2.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <!-- 구글 폰트와 기타 아이콘-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- <script src="./common/js/prefixfree.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/6fa5941add.js" crossorigin="anonymous"></script>
+    <script src="./js/swiper.min.js"></script>
+    
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+
+
+    <!-- 비주얼 영역 -->
+    <div class="visual">
+       <span>온라인 박물관</span>
+   </div>
+<!-- 비주얼 영역 끝 -->
+
+<!-- 서브 내비 -->
+   <div class="sub_nav">
+       <ul>
+           <li><a href="./sub4_1.html">전시</a></li>
+           <li><a href="./sub4_2.html" class="current">갤러리</a></li>
+       </ul>
+   </div>
+<!-- 서브 내비 끝 -->
+   <article id="content">
+   
+       <div class="title_area">
+           <div class="line_map">home &gt; 온라인 박물관 &gt; <strong>갤러리</strong></div>
+           <h2>갤러리</h2>
+           <p>서대문 자연사 박물관의 특별한 전시물을 살펴보세요</p>
+       
+       </div>
+       
+   <!-- 콘탠츠 해더영역 끝-->
+       <div class="content_area">
+                <p>
+                    <span>서대문자연사박물관</span>은 2003년 7월 개관한, 우리나라에서 최초로 공공기관이 계획하고 설립한 가장 오래된 종합 공립자연사박물관입니다.
+                    자연사를 쉽게 이해하고, 기억에 오래 남도록 역사적인 흐름에 맞추어 시간적, 공간적 순서에 따라서 전시하고 있습니다. 
+                    자체 제작한 교육동영상을 제공하고, 체험과 교육 프로그램을 개발하여 운영하고 있습니다. 도시 속에 위치한 자연사박물관으로 
+                    청소년의 교육공간, 지역 주민의 문화공간, 가족의 휴식 공간역할을 하는 살아 있는 인성교육의 공간입니다.
+                </p>
+       <div class="box1">
+         <div class="swiper-container">
+             <ul class="swiper-wrapper">
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img01.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img02.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img03.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img04.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img05.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img06.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img07.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img08.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img09.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img10.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img11.jpg" alt=""></a></li>
+                 <li class="swiper-slide"><a href="#"><img src="./images/content2/img12.jpg" alt=""></a></li>
+             </ul>
+         </div>
+        
+        </div>
+    </div>
+       
+   </article>
+
+   <? include '../common/sub_footer.html' ?>
+   <script src="./js/swiper.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      autoHeight: true, //높이유동  ( .swiper-container에 height:auto)
+      slidesPerView: 2,  //단수
+      spaceBetween: 5,  //단사이 여백
+      loop: true,  //무한 loop
+      //freeMode: true,  //터치 만큼 자유롭게 이동
+      //centeredSlides: true, //센터 슬라이드 위치(만약 단수가 2개이면 양쪽은 반반씩 보임)
+      //effect: 'fade',   //페이드효과(단수가 1단이 된다)
+      //effect: 'flip',  //3D 회전효과(단수가 1단이 된다)
+      navigation: {    //이전/다음 버튼
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {   //페이지 네이션
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+        //type: 'fraction'   //  현재/총개수 (페이지네이션블릿은 사라진다)
+      },
+      autoplay: {  //자동
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      scrollbar: {  //하단 스크롤바
+        el: '.swiper-scrollbar',
+        hide: true
+      }
+    });
+  </script>
+
+</body>
+</html>

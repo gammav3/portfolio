@@ -1,0 +1,20 @@
+/* 박물관소개 공통 */
+
+/* visual 영역 */
+.visual{width: 2000px; height: 250px; background: url(../images/visual05.jpg); position: relative; left: 50%; top: 0; transform: translateX(-50%); margin-top: 160px;}
+.visual span{font-size: 2.25rem; display: block; position: absolute; top: 110px; width: 100%; text-align: center; color: #fff;}
+
+/* 서브메뉴영역 */
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{overflow: hidden; width: 1400px; margin: 0 auto;}
+.sub_nav li{width: 33%; float: left; text-align: center;}
+.sub_nav li a{font-size: 1.25rem; font-weight: 600; padding: 23px 0; color: #777;}
+.sub_nav li a:hover, .sub_nav li .current{border-bottom: 2px solid #3D5F5D; color: #3D5F5D;}
+
+/* title_area 영역 */
+#content{width: 1400px; margin: 0 auto;}
+#content .title_area{height: 400px; position: relative; overflow: hidden;}
+#content .line_map{position: absolute;right: 0; top: 40px;}
+#content .title_area h2{font-size: 3.13rem; text-align: center; margin:  130px 0 0px 0; position: relative; color: #3D5F5D;}
+#content .title_area h2::after{content: ''; display: block; width: 2px; height: 115px; background: #9B9B9B; position: absolute; top: 150px; left: 50%;}
+#content .title_area p{text-align: center; color: #333; opacity: 50%;}

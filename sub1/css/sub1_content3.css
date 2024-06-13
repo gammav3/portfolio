@@ -1,0 +1,21 @@
+#content{width: 1400px; overflow: hidden;}
+.content_area{position: relative; margin: 300px 0 300px 750px;}
+
+.content_area .history_menu{display: flex; justify-content: center;position: absolute;
+    top: -200px;left: -380px;width: 100%;}
+.content_area .history_menu li{width: 300px;}
+.content_area .history_menu li a{padding: 15px 0; text-align: center; font-size: 1.15rem; font-weight: 600; transition: all .5s; background: #fff;}
+.content_area .history_menu li a:hover, .content_area .history_menu li .current{background:#3D5F5D ; color: #fff;}
+.history::before{content: ""; width: 1px; height: 100%; position: absolute; background: #999; position: absolute; left: -50px; top: 0;} 
+.history::after{content: ""; width: 500px; height: 100%; background: url(../images/content3/img01.png); position: absolute; left: -700px; bottom: 0; z-index: 1; background-repeat:no-repeat;}
+.history div{margin-bottom: 20px;}
+.history li{margin: 10px 20px 0;}
+em{float: left; font-style: normal;}
+.history .item{position: relative;}
+.history strong{font-size: 1.25rem; color: #3D5F5D;}
+.history .item_f::after{content: ""; width: 15px; height: 15px; background:  #fff; border: 5px solid #3D5F5D; z-index: 1; position: absolute; left: -62px; top: 0; border-radius: 100%;}
+.history .item::after{content: ""; width: 15px; height: 15px; background:  #fff; border: 5px solid #999; z-index: 1; position: absolute; left: -62px; top: 0; border-radius: 100%;}
+.history em{margin-right: 5px;}
+
+/* 가상의 내비 만들기 */
+.content_area .history_menu_on{position: fixed; width: 100%; z-index:60; left:0; top: 0;}

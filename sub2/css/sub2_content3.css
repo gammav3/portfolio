@@ -1,0 +1,13 @@
+.content_area{width: 1400PX; margin: 200px auto 300px;}
+.content_area .back_img ul{background:url(../images/content3/Group\ 4.png);height: 1600px; background-repeat: no-repeat; position: relative;}
+.content_area .back_img ul li{position: absolute; font-size: 1.75rem; text-align: center;}
+.content_area .back_img ul li:nth-of-type(1){left: 667px; top: 672px; font-size: 2.5rem; font-weight: 600;}
+.content_area .back_img ul li:nth-of-type(2){left: 635px; top: 53px;}
+.content_area .back_img ul li:nth-of-type(3){left: 215px; top: 228px;}
+.content_area .back_img ul li:nth-of-type(4){left: 1088px; top: 257px;}
+.content_area .back_img ul li:nth-of-type(5){left: 57px; top: 658px;}
+.content_area .back_img ul li:nth-of-type(6){left: 1251px; top: 675px;}
+.content_area .back_img ul li:nth-of-type(7){left: 232px; top: 1076px;}
+.content_area .back_img ul li:nth-of-type(8){left: 658px; top: 1253px;}
+.content_area .back_img ul li:nth-of-type(9){left: 1071px; top: 1086px;}
+
