@@ -1,0 +1,52 @@
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap'); 
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* CSS Reset */
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; } 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; } 
+body { font-family:'Noto Sans KR', sans-serif; font-size: 16px; color: #333; } 
+ol, ul { list-style: none; } 
+table { border-collapse: collapse; border-spacing: 0; } 
+address { font-style: normal } 
+a { color: #333; text-decoration: none } 
+img { border: 0; vertical-align: top; width: 100%;} 
+* { box-sizing: border-box; } 
+.hidden { display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff; } 
+.wrap { overflow: hidden;}
+ul li:nth-of-type(1){font-size: 1.5rem; text-align: center;}
+ul li:nth-of-type(2){text-align: center; margin-top: 50px;}
+dl{margin: 20px 0;}
+dt{font-size: 1.11rem; font-weight: 600;}
+dd{text-align: justify;}
+.flex_box{display: flex; gap: 15%; align-items: center;}
+.flex_box div:nth-of-type(1){width: 40%;}
+.flex_box div:nth-of-type(2){width: 45%;}
+.bm{width: 55%; margin: 0 auto;}
+html .consep{font-size: 1.11rem; font-family: 600;}
+.gamma{text-align: center; padding: 23px 0;}
+
+/* contentArea (article) */
+#contentArea { margin: 100px auto; padding: 0 5%; line-height: 1.7em; width: 65%;}
+#contentArea section { margin: 50px 0; position: relative;}
+#contentArea .toggle-btn {position: absolute; top: 10px; right: 10px; font-size: 2em;}
+#contentArea h3 { position: relative; font-size: 1.5em; padding: 20px 0;}
+#contentArea h3::after{ display: block; position: absolute; content: ''; width: 100%; height: 1px; background: #000; bottom: 10px; transition: all .5s;}
+#contentArea .toggle-container { transition: height 0.35s ease-in-out; overflow: hidden;}
+#contentArea .toggle-container:not(.active) { display: none; }
+
