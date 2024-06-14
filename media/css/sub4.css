@@ -1,0 +1,225 @@
+/* 와이드 pc  */
+#content h3{font-size: 2.22rem; color: #FFD825;text-align: center; margin-bottom: 80px;}
+#imgBG{display: block;
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:40%;
+   top:40%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-30%);
+   z-index:-100;
+   ;
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+   left:50%; margin-left: -90px; bottom: 10%;
+  animation:ani 1s infinite  alternate;}
+@keyframes ani {
+  0% { transform:scale(1); opacity:1; color:#fff;}
+  100% { transform:scale(1.1); opacity:0.9; color:#888;}
+}	
+.downlod{margin-top: 150px; width: 100%;background-size: cover;background-repeat: no-repeat;overflow: hidden; background-position: center center;background: url(../images/bg-play-er.jpg);height: 600px;}
+.downlod p{text-align: center;font-size: 1.39rem;margin-bottom: 18px;}
+.downlod p:nth-of-type(1){margin-top: 150px;}
+.downlod .erprnw{font-size: 1.94rem;}
+.kakao{background: url(../images/logo-kakao-white.svg); width: 220px; height: 60px; background-repeat: no-repeat; background-size: contain; display: block;}
+.styeam{background: url(../images/logo-steam-white.svg);width: 220px; height: 60px; background-repeat: no-repeat; background-size: contain; display: block;}
+.downlod_flex{display: flex; gap: 5%;align-items: stretch;justify-content: center;margin-top: 120px;}
+	
+#content{ width:100%; margin:0; height:auto; background:#0E0E0F;position: relative;  }
+#content h2{position: absolute; top: -400px; 
+   text-indent: -9999%;
+   background: url(../images/er-logo-white.png); 
+   background-repeat: no-repeat;  width: 600px;  height: 200px;
+   object-fit: cover;
+   background-size: contain; position: relative; margin: 0 auto; display: none;
+   }
+.qwer{border: 3px solid #FFD825;}
+/*섹션 1*/
+.music_wrap{display: flex; width: 70%; margin: 0 auto; justify-content: space-around}
+.music_wrap div img{width: 100%;}
+.music_wrap div:nth-of-type(1) div{width: 45%; 
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;}
+.mu_item{width: 100%; text-align: justify; display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;}
+#lyrics{width: 100%; padding-bottom: 40px; transition: opacity ease-in-out; font-size: 1.39rem; text-align: center; padding-top: 25px;}
+.btn_play_eternalworld i{font-size: 1rem; color: #000; background: #FFD825;  padding: 10px 40px 10px 41px;  border-radius: 10px;}
+.music_name{width: 80%; font-size: .78rem;}
+.music_name01{font-size: 1.11rem; padding-bottom: 15px; width: 100%;text-align: center;}
+.diplay_none{display: none;}
+.sec01 h3{padding: 150px 0 50px;}
+.diplay_block{display: block;}
+.lyrics{font-size: .8rem; padding-bottom: 20px;}
+
+
+/*섹션 2*/
+.sec02{width: 90%; margin: 250px auto 0; padding-bottom: 100px;}
+.sec02 a{width: 40%; height: 400px; display: flex; justify-content: center; align-items: center;}
+.sec02 a i{font-size: 5rem;color: #f00; transition: all .3s ease-out;}
+.sec02 ul{width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 5%;}
+.sec02 ul li{width: 40%; height: 400px; margin-bottom: 50px;}
+.sec02 ul li p{text-align: center; font-size: 1.11rem; margin-top: 20px;}
+.sec02 ul li:nth-of-type(1){background: url(../images/music_img/jeki.jpg); background-repeat: no-repeat;background-size: cover; background-position: center;}
+.sec02 ul li:nth-of-type(2){background: url(../images/music_img/aya.jpg); background-repeat: no-repeat;background-size: cover; background-position: center;}
+.sec02 ul li:nth-of-type(3){background: url(../images/music_img/emma.jpg); background-repeat: no-repeat;background-size: cover; background-position: center;}
+.sec02 ul li:nth-of-type(4){background: url(../images/gal/aglrria.jpg); background-repeat: no-repeat;background-size: cover; background-position: center;}
+.sec02 ul li a{display: flex; width: 100%;}
+.sec02 ul li:hover i{font-size: 4.5rem;}
+.big{position: fixed; left: 50%;top:50%; transform: translate(-50%,-50%);  z-index: 20; 
+   background: #fff;width: 60%;
+   padding-bottom: 28.25%; display: none;
+   padding-top: 30px; height:0; overflow: hidden;box-sizing: border-box;
+   outline: 5px double rgb(241 255 253);;outline-offset: 5px;
+   box-shadow: 0px 0px 50px 0px #9ed2db; 
+   box-shadow: 0px 0px 50px 0px #9ed2db;
+}
+.big iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}   
+.box{width: 100%; height: 100%; background: rgba(0,0,0,.7); position: fixed; left: 0; top: 0; display: none; z-index: 10;}
+/*섹션3*/
+
+/*섹션 5*/
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+   /*섹션1*/
+   #lyrics{font-size: 1.11rem;}
+   /*섹션2*/
+   .big{width:70%; padding-bottom: 35.25%;}
+   .sec02{width: 100%;}
+   .sec02 ul{justify-content: space-evenly}
+   .sec02 ul li a{height: 350px;}
+   .sec02 ul li {width: 45%;height: 350px;}
+   /*섹션3*/
+   .sec02{width: 100%;}
+   .sec02 ul{justify-content: space-evenly}
+   .sec02 ul li a{height: 350px;}
+   .sec02 ul li {width: 45%;height: 350px;}
+   .big{width:70%; padding-bottom: 35.25%;}
+}
+@media screen and (max-width:1080px) {
+   .music_wrap{width: 85%;}
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#content h3{font-size: 1.67rem; margin: 0;}
+   .down{margin-left: -50px;}
+   .downlod{margin-top: 240px;}
+   .downlod p{text-align: center;font-size: 1.11rem;}
+   .downlod p:nth-of-type(1){margin-top: 20%;}
+   .downlod .erprnw{font-size: 1.67rem;}
+
+
+   /*섹션1*/
+   
+
+   /*섹션2*/
+   .sec02 ul{margin-top: 50px;}
+   .sec02 ul li a{height: 300px;}
+   .sec02 ul li {width: 47%;height: 300px;}
+   .sec02 ul li:nth-of-type(3){margin-top: 9%;}
+   .big{width:80%; padding-bottom: 40.25%;}
+   /*섹션3*/
+  
+   /*마지막 섹션*/
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	.btn_768 {width: 30px ;height: 80px; border: 3px solid#ccc; border-radius: 20px; position: absolute; left: 50%;transform: translate(-50%);bottom: 10%;}
+   .btn_768 div{width: 24px; height: 25px;background: #ccc; border-radius: 50%; position: absolute; left: 50%; transform: translate(-50%);bottom: 9%; animation:ani2 1s infinite  alternate;}
+   @keyframes ani2 {
+      0% { bottom: 0;}
+      100% { bottom: 50px;}
+   }	
+   #imgBG{display: block;
+      position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+      left:50%;
+      top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+      width:auto;
+      min-width:100%; /*동영상 너비를 꽉차게*/
+      height:auto;
+      min-height:100%; /*동영상 높이를 꽉차게*/
+     transform:translateX(-50%) translateY(-50%);
+      z-index:-100;
+      ;
+   }
+   html .down{display: none;}
+   .downlod{margin-top: 0px;}
+   .downlod p:nth-of-type(1){margin-top: 30%;}
+   .kakao{background: none;}
+   .styeam{background: none;}
+   .box_01{width: 47%; margin:  2% 1% 2%;}
+   .none768{display: none;}
+   .move_top {padding-top: 0;}
+
+   /*섹션 1*/
+   .music_wrap{display: block;}
+   .music_name {width: 100%;}
+   .mu_item{margin-top: 50px;}
+
+   /*섹션 2*/
+   .sec02 ul{display: block; margin-top: 100px;}
+   .sec02 ul li {width: 90%; height: 400px; margin: 0 auto 100px;}
+   .sec02 ul li a{height: 400px;}
+   .big{width:90%; padding-bottom: 50.25%;}
+   /*섹션 3*/
+   
+   /*마지막 섹션*/
+  
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   .game_mode{margin-top: 150px;}
+   .downlod p:nth-of-type(1) {margin-top: 15%;}
+   .downlod_flex{margin: 0;}
+   .downlod{height: auto;}
+   .downlod p{font-size: .78rem;}
+   .downlod .erprnw {font-size: 1.39rem;}
+
+   /*섹션1*/
+   #lyrics{font-size: .78rem;}
+
+   /*섹션2*/
+   .sec02{margin: 200px auto 0;}
+   .sec02 ul li{width: 95%; height: 350px;}
+   .sec02 ul li a{height: 350px;}
+
+  
+}
+
+@media screen and (max-width:480px) {
+   #content h3{font-size: 1.39rem;}
+   .downlod p:nth-of-type(1){font-size: .7rem; margin-top: 20%;}
+   .downlod p:nth-of-type(2){font-size: .7rem;}
+   .downlod .erprnw{font-size: 1rem;}
+   .downlod_flex{margin: 0;}   
+
+   /*섹션1*/
+  
+   /*섹션 2*/
+   .sec02 ul{margin-top: 50px;}
+   .sec02 {margin: 120px auto 0;}
+   .sec02 ul li {height: 200px;}
+   .sec02 ul li a{height: 200px;}
+   .sec02 ul li a i{font-size: 3rem;}
+   .sec02 ul li p{font-size: .78rem;}
+   /*섹션 3*/
+
+   
+}
